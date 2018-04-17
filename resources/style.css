@@ -1,0 +1,37 @@
+/* Global Styles here */
+
+body{
+    font-family:  "Roboto Condensed", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Nav and header bar here */
+header{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: brown;
+}
+
+header .head-inside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 920px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    margin: 0.5rem;
+}
