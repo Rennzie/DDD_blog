@@ -6,6 +6,13 @@ body{
     line-height: 1.4;
 }
 
+@media (max-width:600px) {
+    .desktop{
+        display: none;
+    }
+
+}
+
 /* Nav and header bar here */
 header{
     position: fixed;
@@ -45,6 +52,27 @@ nav li:hover{
     box-shadow: 1px 1px 1px 1px #a56c42;
 }
 
+/* Head and Nav for Mobile */
+
+@media (max-width:600px) {
+    header .mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .set-drop-down{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 /* Banner, Quote and Bio here we come */
 .banner{
     margin-top: 4rem;
@@ -73,7 +101,6 @@ nav li:hover{
     text-align: justify;
 }
 
-/* bio going in */
 .banner-inside .bio{
     display: flex;
     flex-direction: column;
@@ -101,6 +128,28 @@ nav li:hover{
     text-align: center;
     margin: 1rem 2rem 2rem 2rem;
 }
+
+/* Banner bio goes here */
+@media (max-width:600px) {
+    .banner-inside .bio{
+        display: none;
+    }
+    .quote{
+        width: 90%;
+        float: none;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .banner{
+        height: auto;
+    }
+
+    .banner-inside{
+        width: 100%;
+    }
+}
+
 
 /* Feature story getting a make over */
 .feature-story{
@@ -130,6 +179,16 @@ nav li:hover{
 .feature-story img{
     width: 920px;
     height: auto;
+}
+
+@media (max-width: 600px) {
+    .feature-story{
+        width: 100%;
+    }
+
+    .feature-story img{
+        width: 100%;
+    }
 }
 
 /* the rest of the STORIES */
@@ -188,6 +247,17 @@ nav li:hover{
 
 }
 
+@media (max-width:600px) {
+    .story-cont{
+        width: 100%;
+    }
+
+    .story{
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* FOOTER and we finally here, page bottom */
 footer{
     background: #8F4814;
@@ -214,4 +284,18 @@ footer ul a:hover{
 
 footer .ico-nav a{
     margin: 1rem;
+}
+
+@media (max-width:600px) {
+    footer ul{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .copy-nav{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
 }
