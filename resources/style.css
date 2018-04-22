@@ -10,7 +10,10 @@ body{
     .desktop{
         display: none;
     }
+}
 
+#mobile-head{
+    display: none;
 }
 
 /* Nav and header bar here */
@@ -55,7 +58,7 @@ nav li:hover{
 /* Head and Nav for Mobile */
 
 @media (max-width:600px) {
-    header .mobile{
+    #mobile-head{
         display: flex;
         flex-direction: column;
     }
@@ -66,9 +69,14 @@ nav li:hover{
         align-items: center;
     }
 
-    .set-drop-down{
+    .set-drop-down {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .set-drop-down li{
         width: 100%;
     }
 }
